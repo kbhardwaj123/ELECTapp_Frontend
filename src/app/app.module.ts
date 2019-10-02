@@ -26,6 +26,8 @@ import { CandidateService } from './candidate.service';
 import { CandidateDetailComponent } from './candidate-detail/candidate-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AuthComponent } from './auth/auth.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ManifestosComponent,
     AboutComponent,
     CandidateDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AuthComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

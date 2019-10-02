@@ -7,6 +7,9 @@ import { FollowedThreadsComponent } from './followed-threads/followed-threads.co
 import { DebateDetailsComponent } from './debate-details/debate-details.component';
 import { CandidateDetailComponent } from './candidate-detail/candidate-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AuthComponent } from './auth/auth.component';
+import { SignupComponent } from './signup/signup.component';
+
 
 
 const routes: Routes = [
@@ -17,6 +20,8 @@ const routes: Routes = [
   { path: 'followed-threads', component: FollowedThreadsComponent },
   { path: 'debate-details', component: DebateDetailsComponent },
   { path: 'candidates/:id', component: CandidateDetailComponent},
+  { path: 'signin', component: AuthComponent },
+  { path: 'signup', component: SignupComponent },
   { path: "**", component: PageNotFoundComponent }
 ];
 
@@ -33,5 +38,7 @@ export const routingComponents = [
   DebateDetailsComponent,
   CandidateDetailComponent,
   PageNotFoundComponent,
+  AuthComponent,
+  SignupComponent,
 ];
 
