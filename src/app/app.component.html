@@ -1,0 +1,44 @@
+<!-- 
+<div id="header_tab">
+  <span id="mover1">ELECTapp</span>
+  <span id="mover2"></span>
+</div>
+<div class="dummy"></div>
+<div id="prime_div">
+  <mat-drawer-container class="main_page_layout">
+    <mat-drawer class="main_page_layout" id="main_page_layout_side" mode="side" opened>
+      <div>
+        <p><button class="side_buttons" mat-raised-button routerLink="/compare" routerLinkActive="active"><mat-icon>compare</mat-icon><span class="sidenav_text">Compare</span></button></p>
+        <p><button class="side_buttons" mat-raised-button routerLink="/candidates" routerLinkActive="active"><mat-icon>people</mat-icon><span class="sidenav_text">Candidates</span></button></p>
+        <p><button class="side_buttons" mat-raised-button routerLink="/categories" routerLinkActive="active"><mat-icon>category</mat-icon><span class="sidenav_text">Categories</span></button></p>
+        <p><button class="side_buttons" mat-raised-button routerLink="/followed-threads" routerLinkActive="active"><mat-icon>bookmark</mat-icon><span class="sidenav_text">Followed Threads</span></button></p>
+        <p><button class="side_buttons" mat-raised-button routerLink="/debate-details" routerLinkActive="active"><mat-icon>insert_comment</mat-icon><span class="sidenav_text">Debate Details</span></button></p>
+      </div>
+    </mat-drawer>
+    <mat-drawer-content class="main_page_layout"><router-outlet></router-outlet>
+      
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
+
+
+    
+  
+    
+ -->
+ <div id="header_tab">
+  <span id="mover1"><mat-icon>contacts</mat-icon>ELECTapp</span>
+  <span id="mover2"></span>
+</div>
+<div class="dummy"></div>
+<div id="main_page_layout_side">
+  <div>
+    <div id="dummy2"></div>
+    <p><button class="side_buttons" mat-raised-button routerLink="/compare" routerLinkActive="active_link"><mat-icon>compare</mat-icon><span class="sidenav_text">Compare</span></button></p>
+    <p><button class="side_buttons" mat-raised-button routerLink="/candidates" routerLinkActive="active_link"><mat-icon>people</mat-icon><span class="sidenav_text">Candidates</span></button></p>
+    <p><button class="side_buttons" mat-raised-button routerLink="/categories" routerLinkActive="active_link"><mat-icon>category</mat-icon><span class="sidenav_text">Categories</span></button></p>
+    <p><button class="side_buttons" mat-raised-button routerLink="/followed-threads" routerLinkActive="active_link"><mat-icon>bookmark</mat-icon><span class="sidenav_text">Followed Threads</span></button></p>
+    <p><button class="side_buttons" mat-raised-button routerLink="/debate-details" routerLinkActive="active_link"><mat-icon>insert_comment</mat-icon><span class="sidenav_text">Debate Details</span></button></p>
+  </div>
+</div>
+<div id="main_content"><router-outlet class="max_height_wanted" ></router-outlet></div>

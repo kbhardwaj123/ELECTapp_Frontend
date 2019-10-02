@@ -1,0 +1,26 @@
+
+
+<div id="candi_main">
+        <div id="candi_name">
+            <mat-icon inline="true" id="candi_icon">face</mat-icon>
+            <!-- <p>{{ parent_data }}</p> -->
+            <mat-list>
+                <mat-list-item><h2>{{ current_candidate[0].person_name }}</h2></mat-list-item>
+                <mat-list-item><h2>{{ current_candidate[0].post }}</h2></mat-list-item>
+                <mat-list-item><h3>ECE,2nd Yr</h3></mat-list-item>
+            </mat-list>
+            
+            <span>
+                    <button mat-raised-button (click)="goPrev()" >Previous</button>
+                    <button mat-raised-button (click)="goNext()" >Next</button>
+            </span>
+        </div>
+        <div id="candi_detail">
+                <mat-tab-group mat-stretch-tabs id="candi_tabs">
+                  <mat-tab label="About"><app-about [parentData]="current_candidate"></app-about></mat-tab>
+                  <mat-tab label="Credentials"><app-credentials [parentData]="current_candidate"></app-credentials></mat-tab>
+                  <mat-tab label="Manifestos"><app-manifestos [parentData]="current_candidate"></app-manifestos></mat-tab>
+                  <mat-tab label="Forum"><app-forum [candiID]="Candidate_ID" [parentData]="current_candidate"></app-forum></mat-tab>
+                </mat-tab-group>
+        </div>
+    </div>
