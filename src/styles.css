@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.max_height_wanted {
+    min-height: 100%;
+}
+

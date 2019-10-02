@@ -1,0 +1,23 @@
+#candi_main {
+    display:inline-flex;
+    width:100%;
+    min-height: 100%;
+    
+}
+#candi_icon {
+    font-size: 9em;
+}
+#candi_name {
+    width: 25%;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+#candi_detail {
+    width: 75%;
+}
+.view_button {
+    position: absolute;
+    top:2em;
+    right: 2em;
+}

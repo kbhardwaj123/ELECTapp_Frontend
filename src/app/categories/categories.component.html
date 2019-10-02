@@ -1,0 +1,104 @@
+
+<div class="categories_poli">
+    <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Gen. Sec. Technical Affairs
+</mat-panel-title>
+<mat-panel-description>
+Click for Details
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>
+    <ul>
+        <li *ngFor="let item of list">{{ item }}</li>
+    </ul>
+
+</mat-expansion-panel>
+</mat-accordion>
+</div>
+<div class="categories_poli">
+    <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Gen. Sec. Academic Affairs
+</mat-panel-title>
+<mat-panel-description>
+Click for Details
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>
+    <ul>
+        <li *ngFor="let item of list">{{ item }}</li>
+    </ul>
+
+</mat-expansion-panel>
+</mat-accordion>
+</div>
+<div class="categories_poli">
+    <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+        Gen. Sec. Cultural Affairs
+</mat-panel-title>
+<mat-panel-description>
+Click for Details
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>
+    <ul>
+        <li *ngFor="let item of list">{{ item }}</li>
+    </ul>
+
+</mat-expansion-panel>
+</mat-accordion>
+</div>
+<div class="categories_poli">
+    <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Gen. Sec. Hostel Affairs
+</mat-panel-title>
+<mat-panel-description>
+Click for Details
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>
+    <ul>
+        <li *ngFor="let item of list">{{ item }}</li>
+    </ul>
+
+</mat-expansion-panel>
+</mat-accordion>
+</div>
+<div class="categories_poli">
+    <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Gen. Sec. Proffessional Affairs
+</mat-panel-title>
+<mat-panel-description [ngSwitch]="value">
+<span *ngSwitchCase="1">Hey Boi</span>
+<span *ngSwitchCase="2">Hello</span>
+<span *ngSwitchCase="3">Greetings</span>
+<div></div>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>
+    <ul>
+        <li *ngFor="let item of list">{{ item }}</li>
+    </ul>
+
+</mat-expansion-panel>
+</mat-accordion>
+</div>

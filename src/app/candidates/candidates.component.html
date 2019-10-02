@@ -1,0 +1,15 @@
+
+<div>
+    <mat-card *ngFor="let candi of candidates">
+        <mat-card-header >
+            <div mat-card-avatar><mat-icon>account_circle</mat-icon></div>
+            <mat-card-title>{{ candi.person_name }}</mat-card-title>
+
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{ candi.post }}</p>
+            <p>{{ candi.info }}</p>
+            <button mat-raised-button class="view_button" (click)="sendID(candi)">View Profile</button>
+        </mat-card-content>
+    </mat-card>
+</div>

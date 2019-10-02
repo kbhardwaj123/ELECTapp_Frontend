@@ -1,0 +1,11 @@
+<p>debate-details works!</p>
+<h2>
+    Debate Links
+</h2>
+<hr>
+<mat-list>
+    <mat-list-item *ngFor="let link of debate_links.links">
+        <a mat-stroked-button [href]="link.href">{{link.desc}}</a>
+    </mat-list-item>
+</mat-list>
+

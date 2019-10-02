@@ -1,0 +1,27 @@
+<div id="forum_container">
+    <h3>Trending Posts</h3>
+    <hr>
+    <div>
+        <mat-card class="forum_cards" *ngFor="let cone of forums">
+            <mat-card-header>
+                <mat-card-title><mat-icon>stars</mat-icon></mat-card-title>
+                <mat-card-title>{{ cone.title }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ cone.description }}</p>
+                <mat-list>
+                    <mat-list-item *ngFor="let comm of cone.comments">
+                        {{ comm }}
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+            <mat-card-actions>
+                    <mat-form-field
+                    floatLabel="auto">
+                  <input matInput placeholder="Leave a comment" required>
+                </mat-form-field>
+                <button mat-raised-button color="primary">Post</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
